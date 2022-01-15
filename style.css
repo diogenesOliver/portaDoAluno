@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#logoUniversidade{
+    position: absolute;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: -9px;
+    cursor: pointer;
+    
+}
+.principal{
+    font-family: Luxurious Roman, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(College.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+
+.conteudo{
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 180px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+hr{
+    margin-top: 15px;
+}
+
+p{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.ins_email{
+    margin-top: 50px;
+    width: 50%;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    height: 35px;
+    color: white;
+    margin-left: 25%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+#btnEnviar{
+    width: 50%;
+    margin-left: 25%;
+    outline: none;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-top: 20px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#btnEnviar:hover{
+    background: rgba(255, 255, 255, .2);
+}
+
+.container{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+}
+
+.buttons{
+    font-family: Luxurious Roman, sans-serif;
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.buttons:hover{
+    background: rgba(255, 255, 255, .2);
+}
+
+/* Modal de Login */
+
+.modalEntrar{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 180px;
+    margin-left: 900px;
+    border-radius: 10px;
+    animation: animando-modal .5s;
+    display: none;
+}
+
+.primeiroModal{
+    display: block;
+    margin-left: 15%;
+    height: 35px;
+    width: 350px;
+    margin-top: 80px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    margin-top: 35px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+#buttonPrimeiroModal{
+    font-family: Luxurious Roman, sans-serif;
+    margin-top: 50px;
+    margin-right: 40px;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#buttonPrimeiroModal:hover{
+    background: rgba(255, 255, 255, .2);
+}
+
+#sairDoPrimeiroModal{
+    position: absolute;
+    font-family: sans-serif;
+    margin-left: 460px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Modal de se Inscrever */
+
+.modalInscrever{
+    position: absolute;
+    height: 490px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 180px;
+    margin-left: 900px;
+    border-radius: 10px;
+    display: none;
+    animation: animando-modal .5s;
+}
+
+#sairDoSegundoModal{
+    position: absolute;
+    font-family: sans-serif;
+    margin-left: 460px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#buttonSegundoModal{
+    font-family: Luxurious Roman, sans-serif;
+    margin-top: 50px;
+    margin-left: 75px;
+    width: 150px;
+    height: 45px;
+    outline: none;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#buttonSegundoModal:hover{
+    background: rgba(255, 255, 255, .2);
+}
+
+
+/* Animação do Modal */
+
+@keyframes animando-modal{
+    0%{
+        opacity: 0;
+        transform: translate3D(500px, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3D(0, 0, 0);
+    }
+}

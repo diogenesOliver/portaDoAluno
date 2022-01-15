@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Universidade</title>
+</head>
+<body>
+    <div class="principal">
+        
+        <div class="conteudo">
+            <h1>Portal do Aluno</h1>
+            <hr>
+
+            <p>Seja você o protagonista da sua história</p>
+            <p>Venha fazer parte da melhor universidade da América Latina</p>
+
+            <p>Insira seu Email no campo abaixo para receber todas as noticias da universidade</p>
+
+            <input type="text" class="ins_email" id="email" placeholder="Email">
+            <button id="btnEnviar">Enviar</button>
+        </div>
+
+        <div class="container">
+            <img src="logo.png" id="logoUniversidade">
+            <button class="buttons" id="btnInscrever">Inscreva-se</button>
+            <button class="buttons" id="btnEntrar">Entrar</button>
+
+            <div class="modalEntrar">
+                <p id="sairDoPrimeiroModal">X</p>
+                <h3>Email :</h3>
+                <input type="email" name="" class="primeiroModal" id="modalEntrar" placeholder="Email">
+                <h3>Senha :</h3>
+                <input type="password" class="primeiroModal"  placeholder="Senha">
+                <button class="primeiroModal" id="buttonPrimeiroModal">Entrar</button>
+            </div>
+
+            <div class="modalInscrever">
+                <p id="sairDoSegundoModal">X</p>
+                <h3>Email :</h3>
+                <input type="email" class="primeiroModal" id="modalInscrever-se" placeholder="Email">
+                <h3>Criar senha :</h3>
+                <input type="password" class="primeiroModal" id="primeiraSenha" placeholder="Criar senha">
+                <h3>Insira a senha novamente: </h3>
+                <input type="password" class="primeiroModal" id="segundaSenha" placeholder="Insira a senha novamente">
+                <button id="buttonSegundoModal">Criar</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
